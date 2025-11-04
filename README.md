@@ -1,6 +1,6 @@
 # Telco Customer Churn Prediction
 
-This project analyzes the **Telco Customer Churn dataset** to predict whether a customer will churn (leave the service) or not. The notebook walks through preprocessing, model building, tuning, and evaluation.
+This Model analyzes the **Telco Customer Churn dataset** to predict whether a customer will churn (leave the service) or not. The notebook walks through preprocessing, model building, tuning, and evaluation.
 
 ---
 
