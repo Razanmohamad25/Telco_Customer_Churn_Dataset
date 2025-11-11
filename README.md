@@ -6,7 +6,7 @@ The project utilizes advanced preprocessing, feature, and model selection techni
 
 # Dataset
 Source:
-WA_Fn-UseC_-Telco-Customer-Churn.csv
+```WA_Fn-UseC_-Telco-Customer-Churn.csv```
 
 Contains customer ID, demographics, account data, service usage details, and churn label.
 
