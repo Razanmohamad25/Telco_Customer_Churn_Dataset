@@ -1,43 +1,65 @@
 # Telco Customer Churn Prediction
+This repository contains a machine learning solution designed to predict customer churn in the telecommunications industry, leveraging the Telco Customer Churn dataset. Churn prediction helps identify at-risk customers, aiding retention efforts and improving business profitability.
 
-This Model analyzes the **Telco Customer Churn dataset** to predict whether a customer will churn (leave the service) or not. The notebook walks through preprocessing, model building, tuning, and evaluation.
+# Overview
+The project utilizes advanced preprocessing, feature, and model selection techniques to analyze customer demographics, account information, service usage, and churn outcomes. Both baseline and tuned Random Forest models are evaluated to maximize predictive performance and business relevance.
 
----
+# Dataset
+Source:
+WA_Fn-UseC_-Telco-Customer-Churn.csv
 
-## 📂 Dataset
-- **Source**: `WA_Fn-UseC_-Telco-Customer-Churn.csv`
-- Contains customer demographics, account information, service usage, and churn label.
-- Target variable: **Churn** (Yes/No)
+Contains customer ID, demographics, account data, service usage details, and churn label.
 
----
+Target Variable: Churn (Yes/No)
 
-## ⚙️ Workflow
-1. **Data Exploration & Preprocessing**
-   - Load dataset and inspect shape, missing values, and summary statistics.
-   - Encode categorical features.
-   - Scale numerical features using `StandardScaler`.
-   - Handle class imbalance with **RandomOverSampler**.
+# Workflow
+Data Exploration & Preprocessing
 
-2. **Modeling**
-   - Train a baseline **Random Forest Classifier**.
-   - Hyperparameter tuning with **BayesSearchCV** for optimized Random Forest.
+Inspect data shape, missing values, and summary statistics.
 
-3. **Evaluation**
-   - Metrics: **Accuracy, Precision, Recall, F1-score, ROC-AUC**.
-   - Confusion matrix visualization.
-   - Comparison between baseline and tuned Random Forest models.
+Encode categorical features.
 
----
+Scale numerical features using StandardScaler.
 
-## 📊 Results
-- Baseline Random Forest trained and evaluated.
-- Tuned Random Forest achieved improved performance using **Bayesian optimization**.
-- Model comparison showed significant improvements in accuracy and F1-score after tuning.
+Address class imbalance via RandomOverSampler.
 
----
+# Modeling
 
-## 🚀 Requirements
-Install the required dependencies before running the notebook:
+Train baseline Random Forest Classifier.
 
-```bash
+Tune hyperparameters with Bayesian optimization (BayesSearchCV).
+
+# Evaluation
+
+Assess metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC.
+
+Confusion matrix visualization.
+
+Compare baseline and optimized models for improvement.
+
+# Project Structure
+```
+Telco_Customer_Churn_Dataset/
+│
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv   # Raw dataset
+├── churn_notebook.ipynb                   # Main analysis and modeling notebook
+├── README.md                              # Project documentation
+WA_Fn-UseC_-Telco-Customer-Churn.csv: Source data file for model training and evaluation.
+```
+churn_notebook.ipynb: Contains complete  workflow—EDA, preprocessing, modeling, evaluation, and visualization.
+
+README.md: Overview, instructions, project details.
+
+# Installation
+Make sure you have the required dependencies installed:
+```
+bash
 pip install numpy pandas matplotlib seaborn scikit-learn imbalanced-learn scikit-optimize
+```
+# Usage
+Clone the repository.
+
+Open and run churn_notebook.ipynb in Jupyter Notebook.
+
+Follow the workflow from data loading to model evaluation; all code and visualizations are included.
+
